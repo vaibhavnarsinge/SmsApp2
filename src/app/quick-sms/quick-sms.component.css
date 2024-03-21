@@ -114,7 +114,7 @@ textarea {
   font-family: "Inter", sans-serif;
   font-size: 1vw;
   padding: 0.5vw;
-  height: 13vh;
+  height: 15vh;
   width: 100%;
 
   outline: none;
@@ -393,7 +393,7 @@ padding: 1vw 0 0 ;
   /* … */
   .main {
     flex-direction: column;
-    background-color: #eaf4f4;
+    background-color: var(--mainbgc);
     padding: 1vw 2vw;
   }
   .main-form {
@@ -595,6 +595,11 @@ h4 {
     width: 30%;    margin-left: 57%;
     margin-top: -10px;
   }
+
+  .textbtn{
+    width: 50px;
+  }
+
   button {
   
     width: 10vw;
@@ -656,8 +661,9 @@ h4 {
 
   .sdiv1option button {
     width: 200px;
-    padding: 15px;
-    font-size: 10px;
+    padding: 4px;
+    height: 20px;
+    font-size: 8px;
   }
   .overlay1,
 .overlay2 {
@@ -677,18 +683,21 @@ h4 {
 }
 h4 {
   font-size: 13px;
+  padding: 10px;
   text-align: start;
 }
-.bx{
-  margin-left: 22vw;
+
+.over21{
+padding: 10px;
 }
-.bx{
-  margin-left: 80vw;
-  cursor: pointer;
+.cfile button{
+    margin-left: 50vw;
 }
-.chatbx{
+
+
+/* .chatbx{
   margin-left: 90vw;
   cursor: pointer;
-}
+} */
 
 }
