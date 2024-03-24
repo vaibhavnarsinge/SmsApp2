@@ -21,6 +21,7 @@ export class MsgServiceService {
   };
 
   SendMsg(data: any) {
+    debugger
     return this.http.get(
       'http://api.sms123.in/api/QuickSend/QuickSend?username=' +data.username +'&password=' + data.password + '&mob=' +
         data.mob +'&msg=' +data.msg +'&sender=' +data.sender + '&templateid=' +data.templateid +

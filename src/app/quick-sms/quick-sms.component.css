@@ -547,7 +547,7 @@ h4 {
   /* … */
   .main {
     flex-direction: column;
-    background-color: #eaf4f4;
+    background-color:  var(--mainbgc);
     padding: 1vw 2vw;
   }
   .main-form {

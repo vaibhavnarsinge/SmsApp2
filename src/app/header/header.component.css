@@ -120,13 +120,14 @@
   background-color: var(--mainbgc);
   color: var(--headingcolor);
   border: none;
+  position: absolute;
   /* display: flex;
   justify-content: center;
   align-items: center; */
   border-radius: 8px;
   border: 1px solid var(--headingcolor);
   padding: 0.5vw;
-  margin: 2vh 0 0 20vw;
+  margin: -2.3vh 0 0 2vw;
   font-size: 1vw;
   font-weight: 600;
   outline: none;
@@ -150,8 +151,23 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 70%;
+  /* width: 81%; */
 }
+
+.main-nav .outer-ul{
+  border: 1px solid rgb(0, 106, 182);
+  border-radius: 8px;
+  margin: 2px;
+  padding: 2px;
+  /* background-color: red; */
+}
+/* .main-nav .first-outerul {
+  background-color: rgb(192, 255, 231);
+}*/
+/* .main-nav .second-outerul {
+  background-color: rgb(170, 222, 233);
+}  */
+
 
 li h4 {
   display: flex;
@@ -216,7 +232,6 @@ li ul.dropdown li:hover {
   color: rgb(255, 255, 255);
   z-index: 700;
   transition: all 0.3s ease-out;
-
 }
 
 li:hover ul.dropdown {
@@ -435,8 +450,8 @@ i {
 li ul.dropdown {
   width: 25vw;
   position: absolute;
-  margin-top: 1vh;
-  margin-left: 44vw;
+  margin-top: 4vh;
+  /* margin-left: 10vw; */
   overflow: hidden;
   display: none;
   border: 1px solid rgba(0, 57, 80, 0.294);
@@ -461,7 +476,7 @@ ul.dropdown li {
   border-radius: 8px;
   border: 1px solid var(--headingcolor);
   padding: 0.5vw;
-  margin: 10px 20px 0 0;
+  margin: 70px 20px 0 0;
   font-size: 10px;
   font-weight: 600;
   outline: none;

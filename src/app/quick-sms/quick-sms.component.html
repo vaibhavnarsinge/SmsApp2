@@ -117,6 +117,7 @@
         <div class="outer-div">
           <h3>Test Numbers</h3>
           <textarea
+          formControlName="testmob"
             cols="30"
             rows="10" 
             placeholder="Enter the Mobile Numbers"
@@ -126,7 +127,8 @@
             <span style="width: 21%; margin-left: 20%"
               >Invalid Mobile No Count :{{ InvalidCount }}</span>
           </div> -->
-          <button type="submit" class="textbtn"  (click)="clearTextarea()">Test SMS</button>
+          <!-- (click)="testSMS()" -->
+          <button type="submit" class="textbtn"  >Test SMS</button>
         </div>
       </form>
     </div>

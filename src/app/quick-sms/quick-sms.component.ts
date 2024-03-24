@@ -35,7 +35,7 @@ export class QuickSmsComponent {
       templateid: ['', [Validators.required]],
       mob: ['', [Validators.required]],
       msg: ['', [Validators.required]],
-      coding: ['', [Validators.required]],
+      coding: ['1'],
       testmob:['']
     });
 
@@ -334,6 +334,7 @@ imageAvailable:boolean=false;
   }
 
   SendMsg() {
+    debugger
     
     this.submitted = true;
     let myArray:any[] = [];
@@ -374,6 +375,50 @@ imageAvailable:boolean=false;
         console.log(res);
       });
   }
+
+
+
+  // testSMS(){
+  //   this.submitted = true;
+  //   let myArray:any[] = [];
+  //   let messagee = this.quicksms.get("msg")?.value
+  //   let credit = this.TotalCreditChages
+  //   let date = this.currentDate
+  //   let senderID = this.quicksms.get("sender")?.value
+ 
+  //   //assigning phone numbers (,) separated to mobile number formbuilder value
+  //   let AllMobileNumbers: string = this.quicksms.get('testmob')!.value;
+  //   const phoneNumberArray = AllMobileNumbers.split('\n').map(number => number.trim()).filter(number => number !== '');
+  //   const uniquePhoneNumbers = Array.from(new Set(phoneNumberArray));
+  //   const validPhoneNumbers = uniquePhoneNumbers.filter(number => number.length === 10 && /^\d+$/.test(number));
+  //   const formattedPhoneNumbers = validPhoneNumbers.join(',');
+  //   this.quicksms.get('testmob')!.setValue(formattedPhoneNumbers);
+
+  //   return this.msgService.SendMsg(this.quicksms.value).subscribe((res: any) => {
+  //       if (res.Success == true) 
+  //       {
+  //         alert(res.Message);
+  //       }
+  //       else{
+  //         alert(res.Message);
+  //       }
+
+  //       res["messagee"] =messagee;
+  //       res["credit"]= credit;
+  //       res["date"]= date;
+  //       res['senderID'] = senderID
+        
+  //       this.msgService.setDataInJson(res).subscribe({
+  //         next:(res:any)=>{
+  //           alert("Data Saved in JSON SERVER "+ res.Message)
+  //           console.log(res);
+            
+  //         }
+  //       })
+  //       console.log(res);
+  //     });
+
+  // }
 
   allExcelNumbers:any;
   onFileSelected(event: any): void {

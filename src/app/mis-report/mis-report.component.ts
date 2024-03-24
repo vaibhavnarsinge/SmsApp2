@@ -5,6 +5,7 @@ import * as XLSX from 'xlsx'
 
 
 
+
 @Component({
   selector: 'app-mis-report',
   templateUrl: './mis-report.component.html',
@@ -17,6 +18,16 @@ export class MisReportComponent {
   http: any;
   ArrayReport:any=[];
 
+
+  p: number = 1; // Current page number
+  pageSize: number = 5; // Number of items per page
+
+ 
+
+  // Function to handle page change
+  onPageChange(pageNumber: number) {
+    this.p = pageNumber; // Set current page number
+  }
 
   constructor(private msgService: MsgServiceService) {
 

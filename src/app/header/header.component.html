@@ -32,6 +32,11 @@
         View DLT Approved Sender ID List in Support Section 🡺
       </h4>
     </div>
+
+
+    <div [ngStyle]="dynamicStyles"  >
+      <button style="z-index: 9999;"  class="themebtn" (click)="toggleMode()">Theme</button>
+    </div>
     <!-- notificationn -->
     <div class="profile-div">
       <div class="profile">
@@ -93,7 +98,9 @@
     <div class="menuicon" (click)="toggleMenu()">
       <i class="bx bxs-dashboard"></i>
     </div>
-    <ul class="outer-ul"  *ngIf="menuvisible">
+    <ul class="outer-ul first-outerul"  *ngIf="menuvisible">
+
+
       <li>
         <h4>
           <div  routerLink="/dashboard">
@@ -111,29 +118,6 @@
           <li>API Document</li>
           <li>New API Document 2.0</li>
         </ul>
-      </li>
-      <li>
-        <h4>
-          <div>
-            <i class="bx bxs-message-dots"></i>
-            Send sms
-          </div>
-          <!-- <i class="bx bxs-chevron-down"></i> -->
-        </h4>
-        <ul class="dropdown">
-          <li routerLink="/">Quick SMS</li>
-          <li>Advance SMS</li>
-          <li>Customize SMS</li>
-          <li>Opt-in SMS</li>
-        </ul>
-      </li>
-      <li>
-        <h4>
-          <div>
-            <i class="bx bxs-message-rounded"></i>
-            Whatsapp
-          </div>
-        </h4>
       </li>
       <li>
         <h4>
@@ -177,20 +161,68 @@
           <li>Campaign History Report</li>
         </ul>
       </li>
+ </ul>
+
+
+ <ul class="outer-ul second-outerul"  *ngIf="menuvisible">
+
+
       <li>
         <h4>
-          <div><i class="bx bxs-cog"></i> Setting</div>
+          <div>
+            <i class="bx bxs-message-dots"></i>
+            Send sms
+          </div>
+          <!-- <i class="bx bxs-chevron-down"></i> -->
+        </h4>
+        <ul class="dropdown">
+          <li routerLink="/">Quick SMS</li>
+          <li>Advance SMS</li>
+          <li>Customize SMS</li>
+          <li>Opt-in SMS</li>
+        </ul>
+      </li>
+      <li>
+        <h4>
+          <div>
+            <i class="bx bxs-message-rounded"></i>
+            Whatsapp
+          </div>
+        </h4>
+      </li>
+      
+      
+      <li>
+        <h4>
+          <div><i class="bx bxs-cog"></i> Voice Call</div>
           <!-- <i class="bx bxs-chevron-down"></i> -->
         </h4>
         <ul class="dropdown">
           <li>My Profile</li>
         </ul>
-      </li>      
+      </li> 
+      <li>
+        <h4>
+          <div><i class="bx bxs-cog"></i> Google RCS</div>
+          <!-- <i class="bx bxs-chevron-down"></i> -->
+        </h4>
+        <ul class="dropdown">
+          <li>My Profile</li>
+        </ul>
+      </li> 
+      <li>
+        <h4>
+          <div><i class="bx bxs-cog"></i> MySms</div>
+          <!-- <i class="bx bxs-chevron-down"></i> -->
+        </h4>
+        <ul class="dropdown">
+          <li>My Profile</li>
+        </ul>
+      </li> 
+     
     </ul>
     
-      <div [ngStyle]="dynamicStyles"  >
-        <button style="z-index: 9999;"  class="themebtn" (click)="toggleMode()">Theme</button>
-      </div>
+     
     
   </div>
 </div>

@@ -10,6 +10,8 @@ import { FormsModule} from '@angular/forms';
 import { QuickSmsComponent } from './quick-sms/quick-sms.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MisReportComponent } from './mis-report/mis-report.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 @NgModule({
   declarations: [
@@ -18,13 +20,16 @@ import { MisReportComponent } from './mis-report/mis-report.component';
     QuickSmsComponent,
     DashboardComponent,
     MisReportComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxPaginationModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
